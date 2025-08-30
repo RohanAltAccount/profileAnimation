@@ -14,7 +14,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 150px; /* Adjust height as needed */
+      height: 150px;
       overflow: hidden;
       font-family: 'Aileron', 'Helvetica Neue', sans-serif;
       font-size: 3.5em;
@@ -32,6 +32,8 @@
         flicker 1.5s step-end infinite,
         fade-out var(--step-duration) forwards infinite;
       animation-delay: 0s;
+      white-space: nowrap; /* Prevents text from wrapping */
+      overflow: hidden; /* Hides text until animated */
     }
 
     .interests h1:nth-child(1) { animation-delay: 0s, 0s, 0s; }
@@ -41,6 +43,12 @@
     .interests h1:nth-child(5) { animation-delay: calc(var(--step-duration) * 4), calc(var(--step-duration) * 4), calc(var(--step-duration) * 4); }
     .interests h1:nth-child(6) { animation-delay: calc(var(--step-duration) * 5), calc(var(--step-duration) * 5), calc(var(--step-duration) * 5); }
     .interests h1:nth-child(7) { animation-delay: calc(var(--step-duration) * 6), calc(var(--step-duration) * 6), calc(var(--step-duration) * 6); }
+    
+    .interests h1 span.cursor {
+        display: none; /* Hide cursor by default */
+        border-right: 2px solid var(--color-primary-1);
+        animation: blink 1s step-end infinite;
+    }
 
     /* Typing Animation */
     @keyframes typing {
@@ -48,7 +56,7 @@
       10%, 80% { opacity: 1; width: 100%; }
       80%, 100% { opacity: 0; width: 100%; }
     }
-
+    
     /* Flicker Animation */
     @keyframes flicker {
       0%, 19.99%, 22%, 62.99%, 64%, 69.99%, 71%, 100% {
@@ -60,21 +68,28 @@
         color: var(--color-primary-2);
       }
     }
-
+    
+    /* Blinking Cursor Animation */
+    @keyframes blink {
+      0% { border-color: transparent; }
+      50% { border-color: var(--color-primary-1); }
+      100% { border-color: transparent; }
+    }
+    
   </style>
 
   <div class="container">
     <div class="interests">
-      <h1>Comp Sci</h1>
-      <h1>DECA</h1>
-      <h1>Robotics</h1>
-      <h1>Web Design</h1>
-      <h1>YouTube Channel (@ROHAN-MODI)</h1>
-      <h1>Tech</h1>
-      <h1>Writing Tech News (at TecRes)</h1>
+      <h1>Comp Sci<span class="cursor"></span></h1>
+      <h1>DECA<span class="cursor"></span></h1>
+      <h1>Robotics<span class="cursor"></span></h1>
+      <h1>Web Design<span class="cursor"></span></h1>
+      <h1>YouTube Channel (@ROHAN-MODI)<span class="cursor"></span></h1>
+      <h1>Tech<span class="cursor"></span></h1>
+      <h1>Writing Tech News (at TecRes)<span class="cursor"></span></h1>
     </div>
   </div>
 
   <p>Hello, my name's Rohan. I'm passionate about tech and creating things! </p>
   
-  </div>
+</div>
