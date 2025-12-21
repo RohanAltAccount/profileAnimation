@@ -50,14 +50,12 @@
         animation: blink 1s step-end infinite;
     }
 
-    /* Typing Animation */
     @keyframes typing {
       0%, 10% { opacity: 1; width: 0; }
       10%, 80% { opacity: 1; width: 100%; }
       80%, 100% { opacity: 0; width: 100%; }
     }
     
-    /* Flicker Animation */
     @keyframes flicker {
       0%, 19.99%, 22%, 62.99%, 64%, 69.99%, 71%, 100% {
         text-shadow: 0 0 10px var(--color-primary-2), 0 0 20px var(--color-primary-2);
@@ -69,7 +67,6 @@
       }
     }
     
-    /* Blinking Cursor Animation */
     @keyframes blink {
       0% { border-color: transparent; }
       50% { border-color: var(--color-primary-1); }
