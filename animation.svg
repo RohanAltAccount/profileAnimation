@@ -1,1 +1,42 @@
+<svg width="800" height="160" viewBox="0 0 800 160"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <style>
+    text {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 48px;
+      fill: #FFFB00;
+      text-anchor: middle;
+      dominant-baseline: middle;
+    }
+
+    .glow {
+      filter: drop-shadow(0 0 6px #00FFFB)
+              drop-shadow(0 0 12px #00FFFB);
+    }
+
+    @keyframes fade {
+      0% { opacity: 0; }
+      10% { opacity: 1; }
+      80% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
+    .t1 { animation: fade 21s infinite; }
+    .t2 { animation: fade 21s infinite; animation-delay: 3s; }
+    .t3 { animation: fade 21s infinite; animation-delay: 6s; }
+    .t4 { animation: fade 21s infinite; animation-delay: 9s; }
+    .t5 { animation: fade 21s infinite; animation-delay: 12s; }
+    .t6 { animation: fade 21s infinite; animation-delay: 15s; }
+    .t7 { animation: fade 21s infinite; animation-delay: 18s; }
+  </style>
+
+  <text x="400" y="80" class="glow t1">Comp Sci</text>
+  <text x="400" y="80" class="glow t2">DECA</text>
+  <text x="400" y="80" class="glow t3">Robotics</text>
+  <text x="400" y="80" class="glow t4">Web Design</text>
+  <text x="400" y="80" class="glow t5">YouTube (@ROHAN-MODI)</text>
+  <text x="400" y="80" class="glow t6">Tech</text>
+  <text x="400" y="80" class="glow t7">Writing Tech News</text>
+</svg>
 
