@@ -43,8 +43,8 @@
     .interests h1:nth-child(6) { animation-delay: calc(var(--step-duration) * 5), calc(var(--step-duration) * 5), calc(var(--step-duration) * 5); }
     .interests h1:nth-child(7) { animation-delay: calc(var(--step-duration) * 6), calc(var(--step-duration) * 6), calc(var(--step-duration) * 6); }
     
-    .interests h1 span.cursor {
-        display: none; /* Hide cursor by default */
+    .interests h1 span.class1 {
+        display: none; /* Hide class1 by default */
         border-right: 2px solid var(--color-primary-1);
         animation: blink 1s step-end infinite;
     }
@@ -74,13 +74,13 @@
   </style>
   <div class="container">
     <div class="interests">
-      <h1>Comp Sci<span class="cursor"></span></h1>
-      <h1>DECA<span class="cursor"></span></h1>
-      <h1>Robotics<span class="cursor"></span></h1>
-      <h1>Web Design<span class="cursor"></span></h1>
-      <h1>YouTube Channel (@ROHAN-MODI)<span class="cursor"></span></h1>
-      <h1>Tech<span class="cursor"></span></h1>
-      <h1>Writing Tech News (at TecRes)<span class="cursor"></span></h1>
+      <h1>Comp Sci<span class="class1"></span></h1>
+      <h1>DECA<span class="class1"></span></h1>
+      <h1>Robotics<span class="class1"></span></h1>
+      <h1>Web Design<span class="class1"></span></h1>
+      <h1>YouTube Channel (@ROHAN-MODI)<span class="class1"></span></h1>
+      <h1>Tech<span class="class1"></span></h1>
+      <h1>Writing Tech News (at TecRes)<span class="class1"></span></h1>
     </div>
   </div>
   <p>Hello, my name's Rohan. I'm passionate about tech and creating things! </p>
