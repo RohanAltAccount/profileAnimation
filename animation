@@ -9,7 +9,6 @@
       --anim-duration: 25s; /* Total animation duration */
       --step-duration: calc(var(--anim-duration) / 7); /* Duration per step (7 interests) */
     }
-
     .container {
       display: flex;
       justify-content: center;
@@ -72,9 +71,7 @@
       50% { border-color: var(--color-primary-1); }
       100% { border-color: transparent; }
     }
-    
   </style>
-
   <div class="container">
     <div class="interests">
       <h1>Comp Sci<span class="cursor"></span></h1>
@@ -86,7 +83,6 @@
       <h1>Writing Tech News (at TecRes)<span class="cursor"></span></h1>
     </div>
   </div>
-
   <p>Hello, my name's Rohan. I'm passionate about tech and creating things! </p>
   
 </div>
